@@ -1,0 +1,121 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --textDark: black;
+    --textWhite: white;
+    --darkRed: darkred;
+}
+
+body {
+    background-image: url(https://cdn.statusqueen.com/desktopwallpaper/thumbnail/guild-wars-Hd_4k_desktop_wallpaper_photos-517.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* header - start*/
+header {
+    height: 70px;
+    width: 100%;
+    background-color: var(--textDark);
+    color: var(--textWhite);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    opacity: .8;
+}
+
+header h1 {
+    letter-spacing: 2px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    letter-spacing: 1px;
+}
+
+header nav ul li a{
+    cursor: pointer;
+    color: var(--textWhite);
+    text-decoration: none;
+    background-color: inherit;
+    padding: 4px 8px;
+    border-radius: 3px;
+    transition: all .7s;
+}
+
+.active {
+    background-color: orange;
+    padding: 4px 8px;
+    border-radius: 3px;
+}
+
+header nav ul li:hover a{
+    background-color: orange;
+    padding: 4px 8px;
+    border-radius: 3px; 
+}
+/* header -end*/
+
+/* main - start*/
+main {
+    height: calc(100% - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--textWhite);
+}
+
+main h3 {
+    color: var(--textWhite);
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 5px auto;
+}
+
+main h1 {
+    color: var(--textDark);
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin: 8px auto;
+}
+
+main .buttons {
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+main .buttons button {
+    font-size: 1.05;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 18px;
+    border-radius: 5px;
+    background-color: var(--darkRed);
+    color: var(--textWhite);
+    outline: none;
+    border: 2px solid var(--darkRed);
+    transition: all .7s;
+}
+
+main .buttons button:hover {
+    background-color: var(--textWhite);
+    color: var(--darkRed);
+    border: 2px solid var(--darkRed);
+}
+/* main - end*/
